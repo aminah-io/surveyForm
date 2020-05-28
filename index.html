@@ -1,0 +1,60 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Survey Form</title>
+<head>
+<body>
+  <main>
+    <section>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">A sruvery to determine a number of things about you that may or may not matter in the grand scheme of things. Either way, I get to practice my HTML/CSS/JavaScript skills, so not all is lost.</p>
+      <article>
+        <form id="survey-form">
+          <label id="name-label" for="name">Name: </label>
+          <input id="name" type="text" placeholder="Winnie T. Pooh" required>
+          <label id="email-label" for="email">Email: </label>
+          <input id="email" type="email" placeholder="example@gmail.com" required>
+          <label id="number-label" for="number">Enter a number between 10 and 50: </label>
+          <input id="number" type="number" min="10" max="50" placeholder="Enter a number">
+          <label for="dropdown">Do you know?</label>
+          <select id="dropdown">
+            <option value="yes">I'm omniscient</option>
+            <option value="no">I know nothing</option>
+            <option value="maybe">Whether I know or do not know matters not</option>
+          </select>
+          <fieldset>
+            <legend>Your current existential state: </legend>
+            <input id="angst" type="radio" name="existential" value="angst">
+            <label for="angst">Angst</label>
+            <input id="dread" type="radio" name="existential" value="dread">
+            <label for="dread">Dread</label>
+            <input id="confusion" type="radio" name="existential" value="confusion">
+            <label for="confusion">Confusion</label>
+          </fieldset>
+          <fieldset>
+            <legend>You base your decisions on: </legend>
+            <input id="love" type="radio" name="decisions" value="love">
+            <label for="love">Love</label>
+            <input id="fear" type="radio" name="decisions" value="fear">
+            <label for="fear">Fear</label>
+          </fieldset>
+          <fieldset>
+            <legend>What is real? (choose at least one) </legend>
+            <input id="moon-rabbit" type="checkbox" name="moon-rabbit" value="Moon Rabbit">
+            <label for="moon-rabbit">Moon Rabbit</label>
+            <input id="nothing" type="checkbox" name="nothing" value="Nothing">
+            <label for="nothing">Nothing</label>
+            <input id="faeries" type="checkbox" name="faeries" value="Faeries">
+            <label for="faeries">Faeries</label>
+            <input id="everything" type="checkbox" name="everything" value="Everything">
+            <label for="everything">Everything</label>
+          </fieldset>
+          
+          <label for="comment-section">Additional Comments: </label>
+          <textarea id="comments" rows="4" columns="10" placeholder="Enter your comments..."></textarea>
+            <button id="submit">Submit</button>
+        </form>
+      </article>
+    </section>
+  </main>
+</body>
