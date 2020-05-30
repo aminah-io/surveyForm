@@ -1,0 +1,76 @@
+body {
+  animation-name: gradient-bg;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  display: grid;
+  grid-template-columns: auto;
+  margin: 2vh auto;
+  width: 60%;
+  height: 70%;
+}
+
+@keyframes gradient-bg {
+  0% {
+    background-color: #6ec2de;
+  }
+  35% {
+    background-color: #79a7e8;
+  }
+  75% {
+    background-color: #7e8cf1;
+  }
+  100% {
+    background-color: #6ec2de;
+
+  }
+}
+
+h1, h2, h3, h4 {
+  font-family: "Nanum Gothic", sans-serif;
+  padding-bottom: 5px;
+}
+
+main {
+/*   border: 1px solid black; */
+  border-radius: 5px;
+  padding: 2em;
+  background-color: #eee;
+  box-shadow: 2px 4px 5px rgba(0,0,0, 0.3);
+}
+
+#title {
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+section, input, button, select, textarea {
+  font-family: "Quicksand", sans-serif;
+  margin: 10px;
+}
+
+form {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input#name, input#email, input#number, select {
+  width: 70%;
+  margin: auto;
+  padding: 0.4em; 
+}
+
+label, fieldset {
+  margin: 5px;
+}
+
+button {
+  width: 80px;
+  height: 40px;
+  margin: auto;
+  color: #fff;
+  background-color: #39a47c;
+  font-size: 18px;
+}
